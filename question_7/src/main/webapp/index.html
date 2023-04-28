@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	
+	<div>
+	<h1>Insert data</h1>
+	<form action='PatientServlet' method='post'>
+		ID  : <input type='number' name='id' /> <br/>
+		Name: <input type='text' name='name' /> <br/>
+		Age : <input type='number' name='age' /> <br/>
+		Cause : <input type='text' name='cause' /> <br/>
+		Doctor : <input type='text' name='doctor' /> <br/>
+		Date : <input type='date' name='date' /> <br/>
+		Treatment :<input type='text' name='treatment' /> <br/>
+		<input type='submit' value='postData'>
+	</form>
+	
+	<h1>Update data</h1>
+	
+	<form action='getServlet' method='get'>
+		Get Data: <input type='submit' value='getData'>
+	</form>
+	</div>
+</body>
+</html>
