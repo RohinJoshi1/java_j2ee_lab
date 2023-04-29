@@ -14,6 +14,15 @@ public class RunQuery {
 		}
 		
 	}
+	/**
+	/**connection con;
+	 * RunQuery(){
+	 * Class.forName("com.mysql.cj.jdbc.Driver");
+	 * this.conn = DriverMananger.getConnection(url,u,p);
+	 * 
+	 * }
+	 * @param query
+	 */
 	void update(String query) {
 		try {
 			if(conn!=null) {
