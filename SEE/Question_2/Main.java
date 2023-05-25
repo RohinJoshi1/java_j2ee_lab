@@ -8,7 +8,7 @@ Create a new list holding all the book details with price greater than a user sp
 For a given value by the user, find all the books that match either the whole or a part of the book title.
 Identify a publisher and print books from a particular publisher. Update the publisher details based on a title.
  */
-public class Main {
+public class UserLogin {
     public static void main(String[] args) {
         BookDatabase db = new BookDatabase();
         db.AddBook();

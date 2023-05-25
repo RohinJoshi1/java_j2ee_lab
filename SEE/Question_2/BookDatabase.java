@@ -70,7 +70,7 @@ public class BookDatabase {
     }
     //Updated java syntax cuz I'm lazy
     void filterByPrice(int price){
-        books.stream().filter((Book b ) -> b.price > price).forEach(System.out::println);
+        books.stream().filter((Book b ) -> b.price > price).forEach(b.printDetails());
     }
     void similaritySearch(String phrase){
         for(Book b: books){
@@ -80,7 +80,7 @@ public class BookDatabase {
         }
     }
     void searchBooksByAuthor(String author){
-        books.stream().filter((Book b)-> b.author.equals(author)).forEach(System.out::println);
+        books.stream().filter((Book b)-> b.author.equals(author)).forEach(b.printDetails());
     }
 
 }
